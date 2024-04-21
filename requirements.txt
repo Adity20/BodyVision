@@ -1,0 +1,7 @@
+cv2
+numpy
+hashlib
+sqlite3
+streamlit
+Image
+pandas

@@ -51,9 +51,6 @@ def about_us():
         accurate measurements. We’re determined to make a difference in this industry, so 
         that it benefits both the consumers and the retailers.
 
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit incidunt laudantium 
-        voluptatibus consectetur ipsa sapiente dicta cumque natus consequuntur maxime eveniet 
-        vero nisi, tempora repudiandae rem ea sequi vitae. Nulla!
         """
     )
     # Load and display contributor images
@@ -61,6 +58,7 @@ def about_us():
     contributor1_img = Image.open("contributor1.jpg")
     contributor2_img = Image.open("contributor2.jpg")
     contributor3_img = Image.open("contributor3.jpg")
+    img_width = contributor1_img.width
 
     col1, col2, col3, col4 = st.columns(4)
     with col1:
@@ -175,8 +173,8 @@ def main():
                             width_cm = pixels_to_cm(width, reference_length_pixels, reference_length_cm)
                             height_cm = pixels_to_cm(height, reference_length_pixels, reference_length_cm)
                             st.write(f"Predicted Cloth Size:")
-                            st.write(f"Width: {width_cm:.2f} cm")
-                            st.write(f"Height: {height_cm:.2f} cm")
+                            st.write(f"Width: {width_cm*2:.2f} cm")
+                            st.write(f"Height: {height_cm*2:.2f} cm")
                         else:
                             st.write("No shirt detected.")
             else:
