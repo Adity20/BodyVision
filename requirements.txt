@@ -1,6 +1,5 @@
 opencv-python
 numpy
-hashlib
 streamlit
 pillow
 pandas
