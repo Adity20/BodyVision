@@ -1,7 +1,6 @@
 opencv-python
 numpy
 hashlib
-sqlite3
 streamlit
-Image
+pillow
 pandas
