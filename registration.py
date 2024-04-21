@@ -58,6 +58,7 @@ def about_us():
     contributor1_img = Image.open("contributor1.jpg")
     contributor2_img = Image.open("contributor2.jpg")
     contributor3_img = Image.open("contributor3.jpg")
+    contributor4_img = Image.open("contributor4.jpg")
     img_width = contributor1_img.width
 
     col1, col2, col3, col4 = st.columns(4)
@@ -67,6 +68,8 @@ def about_us():
         st.image(contributor2_img, caption="Contributor 2", use_column_width=True)
     with col3:
         st.image(contributor3_img, caption="Contributor 3", use_column_width=True)
+    with col4:
+        st.image(contributor4_img, caption="Contributor 4", use_column_width=True)    
 # Function to detect shirt dimensions in an image
 def detect_shirt(image):
     # Read the image
